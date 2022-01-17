@@ -1,0 +1,42 @@
+{
+  "id": "a1be1931-a235-44b8-afec-a6f2f0c1d419",
+  "name": "BC19-DC8.02-App",
+  "publisher": "github.com/document-capture",
+  "version": "0.1.0.0",
+  "brief": "",
+  "description": "This extension is an example of how to identify a vendor with the IBAN from a document.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "./res/images/logo.png",
+  "dependencies": [
+    {
+      "id": "4b915d7e-c02a-435f-85ab-649086c1e002",
+      "name": "Continia Core",
+      "publisher": "Continia Software",
+      "version": "5.0.0.0"
+    },
+    {
+      "id": "6da8dd2f-e698-461f-9147-8e404244dd85",
+      "name": "Continia Document Capture 365",
+      "publisher": "Continia Software",
+      "version": "8.0.0.0"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "19.0.0.0",
+  "idRanges": [
+    {
+      "from": 62030,
+      "to": 62039
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "8.0"
+}

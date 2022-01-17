@@ -1,0 +1,6 @@
+*.bak
+*launch.json
+Objects/*/*/.vscode/launch.json
+Objects/*/*/.vscode/settings.json
+Objects/*/*/.alpackages/*.app
+Objects/*/*/github.comdocument*.app
