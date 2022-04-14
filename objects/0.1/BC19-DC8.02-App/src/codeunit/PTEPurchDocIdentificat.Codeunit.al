@@ -38,7 +38,7 @@ codeunit 62030 "PTE Purch. Doc. - Identificat."
         // *********************************************************************************************************************************
         CDCTemplate.Reset();
         CDCTemplate.SETCURRENTKEY("Category Code", Type);
-        CDCTemplate.SETRANGE("Category Code", "Document Category Code");
+        CDCTemplate.SETRANGE("Category Code", Rec."Document Category Code");
         CDCTemplate.SETRANGE(Type, CDCTemplate.Type::Identification);
         IF Rec."File Type" = Rec."File Type"::XML THEN
             CDCTemplate.SETRANGE("Data Type", CDCTemplate."Data Type"::XML)
@@ -52,7 +52,7 @@ codeunit 62030 "PTE Purch. Doc. - Identificat."
         IF NOT CDCTemplateField.FindFirst() THEN
             EXIT;
 
-        CDCDocumentCategory.GET("Document Category Code");
+        CDCDocumentCategory.GET(Rec."Document Category Code");
 
         // *********************************************************************************************************************************
         // CAPTURE THE IBAN FROM THE DOCUMENT VALUES
@@ -72,7 +72,7 @@ codeunit 62030 "PTE Purch. Doc. - Identificat."
                       CDCDocumentCategory."Source Table No.", Vendor.FIELDNO("No."), CDCDocumentCategory."Document Category GUID", Vendor."No.");
 
                     IF RecIDTreeID <> 0 THEN
-                        Found := NOT CDCDocumentCatSourceExcl.GET("Document Category Code", RecIDTreeID);
+                        Found := NOT CDCDocumentCatSourceExcl.GET(Rec."Document Category Code", RecIDTreeID);
                     IF Found THEN
                         FoundVendor := Vendor;
                 UNTIL Found OR (VendorBankAccount.Next() = 0);
@@ -87,7 +87,7 @@ codeunit 62030 "PTE Purch. Doc. - Identificat."
                             RecIDTreeID := CDCRecordIDMgt.GetRecIDTreeID2(
                               CDCDocumentCategory."Source Table No.", Vendor.FIELDNO("No."), CDCDocumentCategory."Document Category GUID", Vendor."No.");
                             IF RecIDTreeID <> 0 THEN
-                                Found := NOT CDCDocumentCatSourceExcl.GET("Document Category Code", RecIDTreeID);
+                                Found := NOT CDCDocumentCatSourceExcl.GET(Rec."Document Category Code", RecIDTreeID);
                             IF Found THEN
                                 FoundVendor := Vendor;
                         UNTIL Found OR (VendorBankAccount.Next() = 0);
@@ -100,7 +100,7 @@ codeunit 62030 "PTE Purch. Doc. - Identificat."
                                 RecIDTreeID := CDCRecordIDMgt.GetRecIDTreeID2(
                                   CDCDocumentCategory."Source Table No.", Vendor.FIELDNO("No."), CDCDocumentCategory."Document Category GUID", Vendor."No.");
                                 IF RecIDTreeID <> 0 THEN
-                                    Found := NOT CDCDocumentCatSourceExcl.GET("Document Category Code", RecIDTreeID);
+                                    Found := NOT CDCDocumentCatSourceExcl.GET(Rec."Document Category Code", RecIDTreeID);
                                 IF Found THEN
                                     FoundVendor := Vendor;
                             UNTIL Found OR (VendorBankAccount.Next() = 0);
