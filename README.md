@@ -8,7 +8,7 @@ maintained in the system and the customer has many vendors without VAT ID.
 
 The code will be unregularly maintained or updated.
 ## Remark ##
-You can use this code as it is, without any warranty or support by us, [TRASER Software GmbH] (https://traser-software.de/ "TRASER Software") and [Continia Software A/S](https://www.continia.com "Continia Software"). 
+You can use this code as it is, without any warranty or support by us, [TRASER Software GmbH](https://traser-software.de/ "TRASER Software") and [Continia Software A/S](https://www.continia.com "Continia Software"). 
 You can use the IBAN vendor-identification on your own risk. 
 
 
@@ -17,5 +17,5 @@ You can use the IBAN vendor-identification on your own risk.
 - Search with the IBAN 
 
 ## Documentation ##
-There is a basic english documentation available in the repositories Documentation directories:
-- [PDF Format](https://github.com/document-capture/)
+There is a basic german documentation available in the repositories Documentation directories:
+- [PDF Format](https://github.com/document-capture/iban-vendor-identification/blob/main/Documentation/Kreditoridentifikation%20durch%20IBAN_de.pdf)
