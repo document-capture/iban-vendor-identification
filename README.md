@@ -7,6 +7,8 @@ The requirement was to identify vendors by IBAN rather than by VAT ID. So the ba
 maintained in the system and the customer has many vendors without VAT ID.
 
 The code will be unregularly maintained or updated.
+
+The solutions were developed by our partner [TRASER Software GmbH](https://traser-software.de/ "TRASER Software"). Many thanks for sharing. 
 ## Remark ##
 You can use this code as it is, without any warranty or support by us, [TRASER Software GmbH](https://traser-software.de/ "TRASER Software") and [Continia Software A/S](https://www.continia.com "Continia Software"). 
 You can use the IBAN vendor-identification on your own risk. 
