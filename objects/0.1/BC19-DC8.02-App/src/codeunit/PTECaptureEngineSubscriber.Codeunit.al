@@ -1,6 +1,3 @@
-/// <summary>
-/// Codeunit LV Capture Engine (ID 70002).
-/// </summary>
 codeunit 62031 "PTE Capture Engine Subscriber"
 {
 
