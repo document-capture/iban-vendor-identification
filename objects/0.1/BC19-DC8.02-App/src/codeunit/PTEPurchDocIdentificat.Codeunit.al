@@ -1,6 +1,3 @@
-/// <summary>
-/// Codeunit LV Purch. Doc. - Identificat. (ID 70001).
-/// </summary>
 codeunit 62030 "PTE Purch. Doc. - Identificat."
 {
     TableNo = 6085590;
