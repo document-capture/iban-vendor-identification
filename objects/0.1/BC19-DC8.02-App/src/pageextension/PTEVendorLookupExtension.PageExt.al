@@ -9,7 +9,6 @@ pageextension 62030 "PTE Vendor Lookup Extension" extends "Vendor Lookup"
                 ApplicationArea = All;
                 Caption = 'Vendor Bank Accounts';
                 ToolTip = 'View or set up the vendors bank accounts. You can set up any number of bank accounts for each vendor.';
-                Description = 'DBC-350';
                 Image = BankAccount;
                 Promoted = true;
                 PromotedCategory = Category7;
